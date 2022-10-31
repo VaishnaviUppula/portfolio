@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="contact.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("NVKue-0YWGuN-Sjjt");
+      })();
+    </script>
+  </head>
+  <body>
+    <a href="index.html"><i class="fa fa-arrow-circle-left" style="font-size:36px"></i></a>
+    <div class="bod">
+          <h4>
+            WANT TO REACH OUT?
+          </h4>
+        <h5 for="name">Name</h5>
+          <div>
+            <input
+              type="text"
+              id="name"
+            />
+          </div>
+          <h5 for="email">Email</h5>
+          <div >
+            <input
+              type="email"
+              id="email"
+            />
+          </div>
+          <h5 for="message">Message</h5>
+          <div >
+            <textarea id="message" rows="4"></textarea>
+          </div>
+          <button class="button hover-1" onclick="sendMail()">SEND!</button>
+    </div>
+  </body>
+</html>
